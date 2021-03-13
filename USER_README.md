@@ -40,7 +40,7 @@ Welcome to my attempt to add some JS interactivity to a website!
 
 #### script.js and helpers.js
 
-- [ ] Nothing to see here yet!
+- [x] Added h1 interactivity
 
 ### Server side
 
@@ -63,7 +63,7 @@ Welcome to my attempt to add some JS interactivity to a website!
 
 ### Client side
 
-- [ ] 
+- [ ] helpers.test.js: unit tests do not pass despite manual test working (need to mock tests first?) 
 
 ### Miscellaneous
 
