@@ -9,6 +9,14 @@ describe('index.html', () => {
         document.documentElement.innerHTML = html.toString();
     })
 
+    describe('h1 tag', () => {
+        test('it has an h1 tag with the word heading in it', () => {
+            const h1 = document.querySelector('h1');
+            expect(h1).toBeTruthy();
+            expect(h1).toContain('Heading');
+        })
+    })
+
     test('it has a header with the word welcome in it', () => {
         let header = document.querySelector('header');
         expect(header.textContent).toContain('Welcome');
