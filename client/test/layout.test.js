@@ -13,7 +13,7 @@ describe('index.html', () => {
         test('it has an h1 tag with the word heading in it', () => {
             const h1 = document.querySelector('h1');
             expect(h1).toBeTruthy();
-            expect(h1).toContain('Heading');
+            expect(h1.textContent).toContain('Heading');
         })
     })
 
