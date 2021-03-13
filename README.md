@@ -4,7 +4,8 @@ Below is an outline of what I will be attempting, along with some links to resou
 
 Meanwhile, click the link below to visit the deployed website!
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3f1dda05-c84f-4771-b010-8928a5b13756/deploy-status)](https://app.netlify.com/sites/elwin-js-in-browser/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3f1dda05-c84f-4771-b010-8928a5b13756/deploy-status)](https://elwin-js-in-browser.netlify.app)
+
 
 ### Study Notes
 | [JavaScript in the Browser](https://github.com/getfutureproof/fp_guides_wiki/wiki/JavaScript-in-the-Browser) | [Simple Dev Server](https://github.com/getfutureproof/fp_guides_wiki/wiki/Simple-Client-Side-Dev-Server) | [DOM Testing](https://github.com/getfutureproof/fp_guides_wiki/wiki/DOM-Testing) | [Jest Mocks](https://github.com/getfutureproof/fp_guides_wiki/wiki/Mocking-Functions-and-Modules-for-Testing-with-Jest) |
