@@ -5,25 +5,56 @@ const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
 
 //Set up the tests
 describe('index.html', () => {
+    let h1 = document.querySelector('h1');
+    let h2 = document.querySelector('h2');
+    let header = document.querySelector('h2');
+    let nav = document.querySelector('nav');
+    let section = document.querySelector('section');
+    let paragraphs = document.querySelectorAll('p');
+    let footer = document.querySelector('footer');
+
     beforeEach(() => {
         document.documentElement.innerHTML = html.toString();
-    })
+    });
 
     describe('h1 tag', () => {
         test('it has an h1 tag with the word heading in it', () => {
-            const h1 = document.querySelector('h1');
             expect(h1).toBeTruthy();
             expect(h1.textContent).toContain('Heading');
         })
-    })
+    });
 
-    test('it has a header with the word welcome in it', () => {
-        let header = document.querySelector('header');
-        expect(header.textContent).toContain('Welcome');
-    })
+    describe('h2 tag', () => {
+        test('it has an h2 tag', () => {
+            expect(h2).toBeTruthy();
+        })
+    });
 
-    test('it has a footer with an image reference', () => {
-        let footer = document.querySelector('footer');
-        expect(footer.textContent).toContain('Image');
-    })
-})
+    describe('header', () => {
+        test('it has a header', () => {
+            expect(header).toBeTruthy();
+        })
+        test('header has nav bar', () => {
+            //Code here
+        })
+        test('nav bar items are styled horizontally', () => {
+            //Code here
+        })
+        test('nav bar is positioned at top of screen', () => {
+            //Code here
+        })
+    });
+
+    describe('paragraph section', () => {
+        test('section contains three paragraphs', () => {
+            //Code here
+        })
+        test('each paragraph corresponds to item on nav bar')
+    });
+
+    describe('footer', () => {
+        test('it has a footer with an image reference', () => {
+            expect(footer.textContent).toContain('Image');
+        })
+    });
+});
